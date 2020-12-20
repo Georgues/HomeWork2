@@ -4,7 +4,9 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
-        main.cpp
+        filter.cpp \
+        main.cpp \
+        ups.cpp
 
 HEADERS += \
     filter.hpp \

@@ -10,7 +10,7 @@ using std::ostream;
 class ups : public filter{
 
 public:
-
+    //Конструкторы класса:
     ups();
 
     ups(const string prod,

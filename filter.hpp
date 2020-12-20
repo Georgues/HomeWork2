@@ -27,12 +27,13 @@ public:
 
     filter(const filter &other);
 
-    filter& operator = (const filter &nz);
+    //Oбъект класса, значение которого я копирую в новый класс из старого (rhs)
+    filter& operator = (const filter &rhs);
 
     //Перегружаем оператор вывода
-    friend ostream& operator << (ostream&, const filter&ups);
+    friend ostream& operator << (ostream&, const filter& filt);
 
-    //Устанавливаем сеттеры и геттеры
+    //Устанавливаем прототипы сеттеров и геттеров
     void setProducer(const string prod);
     string getProducer () const;
 
