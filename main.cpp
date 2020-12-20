@@ -1,9 +1,21 @@
 #include <iostream>
+#include "ups.hpp"
+#include <windows.h>
 
-using namespace std;
+using std::cout;
+using std::endl;
 
 int main()
 {
-    cout << "Hello World!" << endl;
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+
+
+    ups ippon1;
+
+    ups ippon2("IPPON", ups::Euro, 3, 400, 10);
+
+    cout << ippon2 << endl;
+
     return 0;
 }

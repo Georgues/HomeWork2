@@ -54,7 +54,7 @@ ostream& operator << (ostream& stream, const ups& ibp)
 
     stream << "Выходная мощность ИБП(Вт): " << ibp.outputPower <<'\n';
 
-    stream << "Время работы без питания на максимальном потреблениира(мин.): " << ibp.timeBeforeRestart <<endl;
+    stream << "Время работы без питания на максимальном потреблении(мин.): " << ibp.timeBeforeRestart <<endl;
 
     return stream;
 }
